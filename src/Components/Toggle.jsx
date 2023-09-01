@@ -9,13 +9,13 @@ const Toggle=()=>{
         setToggle(!toggle)
         }
     return<>
-    <body className={`${toggle? "Dark": "Light"}`}>
+    <div className={`${toggle? "Dark": "Light"}`}>
     <h1 className={`${toggle? "darkMode":"lightMode"}`}>{`${toggle? "Dark-Mode":"Light-Mode"}`}</h1>
     <div className="center">
         <input type="checkbox" onClick={onClickHandler}/>
     </div>
         
-    </body>
+    </div>
     </>
 }
 
